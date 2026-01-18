@@ -5,6 +5,7 @@ cmake ^
     -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
     -D CRYPTOPP_BUILD_TESTING=OFF ^
     -D CRYPTOPP_SOURCES=%CD% ^
+    -D CRYPTOPP_BUILD_SHARED=ON ^
     -S cryptopp-cmake ^
     -B build
 if errorlevel 1 exit 1
