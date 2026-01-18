@@ -11,6 +11,7 @@ cmake ${CMAKE_ARGS} \
   -D CMAKE_INSTALL_LIBDIR=lib \
   -D CRYPTOPP_BUILD_TESTING=OFF \
   -D CRYPTOPP_SOURCES=$PWD \
+  -D CRYPTOPP_BUILD_SHARED=ON \
   -S cryptopp-cmake \
   -B build
 make -C build -j $CPU_COUNT
